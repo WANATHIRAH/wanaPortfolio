@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wan Nur Athirah portfolio</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+
+        <nav>
+            <a  id = "hpg" href="homepage.html">WANA</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#project">WORK</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="intro-textbox">
+                <h4 id="greeting"><span></span></h4>
+                <img src="images/my2.jpg" style="width:200px">
+                <h1>I'm Wan Nur Athirah</h1>
+            <p>Passionate Back-End Developer</p>
+            <a href="#project" class="explore-btn">LET'S EXPLORE</a>
+        </div>
+
+    </section>
+
+    <!----WORK--->
+
+    <section class="project reveal" id="project">
+        <h1>My Work</h1>
+        <p>Here where it all begin</p>
+
+        <div class="row">
+            <div class="project-col">
+                <img src="images/covernrs.png">
+                <div class="overlay-in">
+                        <h3>February 2022</h3>
+                            <p>UITM Jasin Non-Resident House Rental System</p>
+                            <a href="proj page.html" class="work-btn">View Work ></a>
+                </div>
+            </div>
+            <div class="project-col">
+                <img src="images/second.jpg">
+                <br>
+                <div class="overlay-in">
+                        <h3>February 2022</h3>
+                            <p>UITM Jasin Non-Resident House Rental System</p>
+                            <a href="" class="work-btn">View Work ></a>
+                </div>
+            </div>
+            <div class="project-col">
+                <img src="images/second.jpg">
+                <div class="overlay-in">
+                        <h3>February 2022</h3>
+                            <p>UITM Jasin Non-Resident House Rental System</p>
+                            <a href="" class="work-btn">View Work ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!----js toggle menu --->
+
+    <script>
+        var navLinks =  document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+ <!----js toggle menu --->
+
+ <script>
+
+const greeting = document.getElementById('greeting');
+const greetings = ["HELLO", "ASSALAMUALAIKUM"];
+let currentIndex = 0;
+
+function toggleGreeting() {
+    greeting.textContent = greetings[currentIndex];
+    currentIndex = (currentIndex + 1) % greetings.length; // Toggle between 0 and 1
+}
+
+setInterval(toggleGreeting, 3000);
+    
+ </script>
+</body>
+</html>

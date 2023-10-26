@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.header {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column; 
+    background-color: #663dff;
+    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+}
+
+.project-info{
+    margin-left: 60px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.project-info h2 {
+    text-align: left;
+    color: black;
+    font-size: 40px;
+}
+
+.project-info h3 {
+    text-align: left;
+    color: rgb(205, 193, 193);
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/*----program language use-----*/
+
+.rect-cont {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 70px;
+}
+
+.rect-box {
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 200px;
+    text-align: center;
+    margin: 5px;
+}
+
+@media(max-width:900px){
+    .project-info{
+        margin: auto;
+        padding: 20px;
+    }
+
+    .project-info h2 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .project-info h3 {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .rect-cont{
+        margin: 0;
+        justify-content: center;
+        padding-bottom:30px;
+    }
+}
+
+/*----second section header-----*/
+
+.secder{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.text-cont{
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+    align-items: left;
+}
+
+.text-cont p{
+    color: rgb(199, 195, 195);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.explore-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.explore-btn:hover {
+    background-color: #663dff;
+    background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+}
+
+.explore-btn span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.explore-btn span:after {
+  content: '\00bb';
+  font-size: 20px;
+  opacity: 0;
+  top: 0;
+  position: relative; 
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+.explore-btn:hover span {
+    padding-right: 25px;
+}
+
+.explore-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.video-cont{
+    flex: 1;
+    padding: 10px;
+}
+
+.video-cont p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.video-cont video {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media(max-width:900px){
+
+    .secder{
+        flex-direction: column;
+    }
+
+    .text-cont{
+        text-align: center;
+    }
+
+    .text-cont {
+        padding: 20px; 
+    }
+
+    .video-cont {
+        padding: 20px;
+    }
+}
+
+/*----Third section header-----*/
+
+.thirder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.thirder h4{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.thirder table {
+    border-collapse: collapse;
+    margin: 10px;
+    display: inline-block;
+}
+
+.thirder table td{
+    padding: 5px;
+    border: none;
+}
+
+.thirder table td img  {
+    width: 100%;
+    height: 100%; 
+    display: block;
+}
