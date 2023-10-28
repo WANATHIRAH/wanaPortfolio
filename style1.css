@@ -119,8 +119,8 @@ nav{
 }
 
 .explore-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    border: 1px solid #cc3fc3;
+    background: #cc3fc3;
     transition: 1s;
 
 }
@@ -129,7 +129,7 @@ nav .fa{
     display: none;
 }
 
-@media(max-width:700px){
+@media(max-width:900px){
 
     .intro-textbox h4{
         font-size: 12px;
@@ -174,10 +174,12 @@ nav .fa{
 /*-----PROJECT-----*/
 
 .project {
-    width: 80%;
-    margin: auto;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
     text-align: center;
-    padding-top: 100px;
+    padding: 20px;
 }
 
 
@@ -292,7 +294,7 @@ p{
 
 }
 
-@media(max-width: 700px) {
+@media(max-width: 900px) {
     .row{
         flex-direction: column;
     }
