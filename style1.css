@@ -322,3 +322,18 @@ p{
     text-align: center;
     padding: 30px;
 }
+
+.row-digital {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    gap: 8px;
+  }
+
+  .column-digital {
+    padding: 0;
+  }
+  
+  .column-digital img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
