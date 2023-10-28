@@ -262,6 +262,23 @@
     color: rgb(207, 92, 172);
 }
 
+
+@media(max-width:700px){
+
+    .gallery-image {
+        max-width: 700px;
+        height: auto;
+        cursor: pointer;
+    }
+    
+    .popup-content {
+        max-width: 100%;
+        max-height: 90%; 
+        cursor: pointer;
+    }
+}
+
+
 /*----Footer section header-----*/
 
 .footer{
