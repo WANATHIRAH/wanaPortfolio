@@ -43,7 +43,7 @@ nav{
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: #cc3fc3;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -177,9 +177,9 @@ nav .fa{
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 30px;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 
@@ -197,17 +197,18 @@ p{
 }
 
 .row {
-    margin-top:5%;
+    margin-top:2%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .project-col{
-    flex-basis: 31%;
+    flex-basis: calc(41% - 2%);
     background: #fff3f3;
     border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 1px 1px;
+    margin: 2%;
+    padding: 1px;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
@@ -308,4 +309,16 @@ p{
         font-size: 12px;
         font-weight: 300;
     }
+}
+
+
+/*-----Digital Design section-----*/
+
+.digitalsec {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    text-align: center;
+    padding: 30px;
 }
