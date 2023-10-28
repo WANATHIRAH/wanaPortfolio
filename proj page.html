@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>UITM Jasin Non-Resident House Rental System</title>
 </head>
 <body>
@@ -47,15 +48,34 @@
         <h4>Image Gallery</h4>
         <table>
             <tr>
-                <td><img src="images/NRS1.png" alt="Image 1"></td>
-                <td><img src="images/NRS2.png" alt="Image 2"></td>
+                <td><img src="images/NRS1.png" id="Image 1"  class="gallery-image"></td>
+                <td><img src="images/NRS2.png" id="Image 2"  class="gallery-image"></td>
             </tr>
             <tr>
-                <td><img src="images/NRS3.png" alt="Image 3"></td>
-                <td><img src="images/NRS4.png" alt="Image 4"></td>
+                <td><img src="images/NRS3.png" id="Image 3"  class="gallery-image"></td>
+                <td><img src="images/NRS4.png" id="Image 4"  class="gallery-image"></td>
             </tr>
-        </table>  
+        </table>
+        <div class="image-popup" id="image-popup">
+            <span class="close-button" id="close-button">&times;</span>
+            <img class="popup-content" id="popup-image">
+        </div>
     </section>
+
+    <section class="footer">
+
+        <h2>CONTACT ME</h2>
+        <a class="contact-button" href="https://www.linkedin.com/in/wan-nur-athirah-8a6333269" target="_blank">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a class="contact-button email" href="mailto:athiraharisa@gmail.com" target="_blank">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a class="contact-button whatsapp" href="https://wa.me/0149127434" target="_blank">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </section>
+
 </body>
 </html>
 
@@ -65,4 +85,23 @@
     function playVid() { 
       vid.play(); 
     } 
-    </script> 
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const galleryImages = document.querySelectorAll(".gallery-image");
+    const imagePopup = document.getElementById("image-popup");
+    const popupImage = document.getElementById("popup-image");
+    const closeButton = document.getElementById("close-button");
+
+    galleryImages.forEach((image) => {
+        image.addEventListener("click", function () {
+            popupImage.src = image.src;
+            imagePopup.style.display = "block";
+        });
+    });
+
+    closeButton.addEventListener("click", function () {
+        imagePopup.style.display = "none";
+    });
+});
+
+</script> 
