@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>UITM Jasin Non-Resident House Rental System</title>
+</head>
+<body>
+    <section class="header">
+            <div class="project-info">
+                <h2>Kaferry Vendor Digital Booklet</h2>
+                <h3>Jun 2023</h3>
+            </div>
+            <div class="rect-cont">
+                <div class="rect-box">
+                    <p>WordPress</p>
+                </div>
+                <div class="rect-box">
+                    <p>Elementor</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="secder">
+        <div class="text-cont">
+            <p>Kaferry Vendor Digital Booklet is a web-based booklet which provide information of the company, the event and also their product details to the offline vendor for collaborations opportunity. Collaborated with a team of interns to successfully create this web-based booklet. </p>
+            <!-- <a href="https://github.com/WANATHIRAH/ICT502_WAN" class="explore-btn"><span>VIEW ON GITHUB</span></a> -->
+            <a onclick="playVid()" class="explore-btn"><span>WATCH VIDEO DEMO</span></a>
+        </div>
+        <div class="video-cont">
+            <p>VIDEO DEMO</p>
+            <video id="TheVid" width="600" height="450" controls autoplay> 
+             <source src="images/NRS PROJECT.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="thirder">
+        <h4>Image Gallery</h4>
+        <table>
+            <tr>
+                <td><img src="images/KA1.png" id="Image 1"  class="gallery-image"></td>
+                <td><img src="images/KA2.png" id="Image 2"  class="gallery-image"></td>
+            </tr>
+            <tr>
+                <td><img src="images/KA3.png" id="Image 3"  class="gallery-image"></td>
+                <td><img src="images/KA4.png" id="Image 4"  class="gallery-image"></td>
+            </tr>
+        </table>
+        <div class="image-popup" id="image-popup">
+            <span class="close-button" id="close-button">&times;</span>
+            <img class="popup-content" id="popup-image">
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <h2>CONTACT ME</h2>
+        <a class="contact-button" href="https://www.linkedin.com/in/wan-nur-athirah-8a6333269" target="_blank">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a class="contact-button email" href="mailto:athiraharisa@gmail.com" target="_blank">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a class="contact-button whatsapp" href="https://wa.me/0149127434" target="_blank">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        </a>
+    </section>
+
+</body>
+</html>
+
+<script> 
+    let vid = document.getElementById("TheVid"); 
+    
+    function playVid() { 
+      vid.play(); 
+    } 
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const galleryImages = document.querySelectorAll(".gallery-image");
+    const imagePopup = document.getElementById("image-popup");
+    const popupImage = document.getElementById("popup-image");
+    const closeButton = document.getElementById("close-button");
+
+    galleryImages.forEach((image) => {
+        image.addEventListener("click", function () {
+            popupImage.src = image.src;
+            imagePopup.style.display = "block";
+        });
+    });
+
+    closeButton.addEventListener("click", function () {
+        imagePopup.style.display = "none";
+    });
+});
+
+</script> 
