@@ -129,7 +129,7 @@ nav .fa{
     display: none;
 }
 
-@media(max-width:900px){
+@media(max-width:700px){
 
     .intro-textbox h4{
         font-size: 12px;
@@ -145,7 +145,7 @@ nav .fa{
 
     .nav-links{
         position: absolute;
-        background: #f44336;
+        background: #cc3fc3;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -342,3 +342,79 @@ p{
     margin-top: 8px;
     vertical-align: middle;
   }
+
+  /*-----Footer section-----*/
+
+.footer{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    min-height: 60vh;
+  }
+
+.contact-details{
+    flex:1;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+.contact-details h2{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.contact-details p{
+    color: white;
+}
+
+.contact-button-container {
+    display: flex;
+    flex-direction:column;
+}
+
+.contact-button-wrapper {
+    display: flex; 
+    align-items: center;
+    margin: 10px;
+}
+
+.contact-button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+  }
+
+  .image-cont {
+    flex:1;
+    align-items: center;
+  }
+
+
+  @media(max-width:700px){
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .contact-button-wrapper {
+       flex-direction: column;
+    }
+
+    
+  .image-cont {
+    margin-left: 30px;
+  }
+
+    
+}
