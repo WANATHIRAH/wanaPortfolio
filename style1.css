@@ -315,12 +315,17 @@ p{
 /*-----Digital Design section-----*/
 
 .digitalsec {
+    margin-top:2%;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     margin: 30px;
     text-align: center;
     padding: 30px;
+}
+
+.digitalsec p{
+    margin-bottom: 25px;
 }
 
 .row-digital {
